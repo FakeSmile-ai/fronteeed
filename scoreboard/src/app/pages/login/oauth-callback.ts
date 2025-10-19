@@ -1,7 +1,7 @@
 // src/app/pages/login/oauth-callback.ts
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from '../../core/services/authentication.service';
+import { AuthenticationService } from '../../shared/services/api/authentication.service';
 
 @Component({
   standalone: true,

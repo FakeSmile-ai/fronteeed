@@ -12,9 +12,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { PlayerService } from '../../../services/player.service';
+import { PlayerService } from '../../../shared/services/api/player.service';
 import { Player } from '../../../models/player';
-import { AuthenticationService } from '../../../core/services/authentication.service';
+import { AuthenticationService } from '../../../shared/services/api/authentication.service';
 
 @Component({
   selector: 'app-players-list',

@@ -10,9 +10,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { TeamService } from '../../../services/team.service';
+import { TeamService } from '../../../shared/services/api/team.service';
 import { Team } from '../../../models/team';
-import { AuthenticationService } from '../../../core/services/authentication.service';
+import { AuthenticationService } from '../../../shared/services/api/authentication.service';
 
 @Component({
   selector: 'app-teams-list',

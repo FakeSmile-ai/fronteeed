@@ -7,8 +7,8 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 
-import { authTokenInterceptor } from './core/interceptors/auth-token.interceptor';
-import { installStorageDebugging } from './core/debug/debug-storage';
+import { authTokenInterceptor } from './shared/services/api/auth-token.interceptor';
+import { installStorageDebugging } from './shared/utils/debug-storage';
 
 function initDebugFactory() {
   const platformId = inject(PLATFORM_ID);

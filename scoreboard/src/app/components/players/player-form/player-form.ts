@@ -10,8 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon'; // 👈 nuevo
 
-import { PlayerService } from '../../../services/player.service';
-import { TeamService } from '../../../services/team.service';
+import { PlayerService } from '../../../shared/services/api/player.service';
+import { TeamService } from '../../../shared/services/api/team.service';
 import { Team } from '../../../models/team';
 
 @Component({

@@ -3,7 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AuthenticationService } from '../../core/services/authentication.service';
+import { AuthenticationService } from '../../shared/services/api/authentication.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({

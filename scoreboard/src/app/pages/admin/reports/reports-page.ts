@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { ReportsService } from '../../../core/services/reports.service';
+import { ReportsService } from '../../../shared/services/api/reports.service';
 
 type Team = { id: number; name: string };
 

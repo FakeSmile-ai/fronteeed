@@ -1,5 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
-import { RealtimeService } from '../../core/realtime';
+import { RealtimeService } from '../services/realtime/realtime.service';
 
 @Component({
   selector: 'app-quarter-indicator',

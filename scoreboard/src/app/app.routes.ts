@@ -1,7 +1,7 @@
 // src/app/app.routes.ts
 import { Routes } from '@angular/router';
-import { authGuard } from './core/guards/auth.guard';
-import { adminGuard } from './core/guards/admin.guard';
+import { authGuard } from './shared/guards/auth.guard';
+import { adminGuard } from './shared/guards/admin.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -45,13 +45,13 @@ export const routes: Routes = [
     path: 'score/:id',
     canActivate: [authGuard],
     loadComponent: () =>
-      import('./features/scoreboard/scoreboard/scoreboard').then(m => m.ScoreboardComponent),
+      import('./pages/scoreboard/scoreboard/scoreboard').then(m => m.ScoreboardComponent),
   },
   {
     path: 'control/:id',
     canActivate: [authGuard],
     loadComponent: () =>
-      import('./features/control/control-panel/control-panel').then(m => m.ControlPanelComponent),
+      import('./pages/scoreboard/control-panel/control-panel').then(m => m.ControlPanelComponent),
   },
 
   // Players (solo Admin)

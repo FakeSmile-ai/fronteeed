@@ -10,9 +10,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';   // 👈 HABILITA <mat-icon>
 
-import { TeamService } from '../../../services/team.service';
+import { TeamService } from '../../../shared/services/api/team.service';
 import { Team } from '../../../models/team';
-import { AuthenticationService } from '../../../core/services/authentication.service';
+import { AuthenticationService } from '../../../shared/services/api/authentication.service';
 
 @Component({
   selector: 'app-team-form',
