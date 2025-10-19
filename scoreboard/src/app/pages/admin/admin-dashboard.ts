@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, Router } from '@angular/router';
-import { AuthenticationService } from '../../core/services/authentication.service';
+import { AuthenticationService } from '../../shared/services/api/authentication.service';
 
 @Component({
   selector: 'app-admin-dashboard',

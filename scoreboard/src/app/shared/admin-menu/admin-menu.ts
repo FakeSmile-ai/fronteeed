@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
-import { AuthenticationService } from '../../core/services/authentication.service';
+import { AuthenticationService } from '../services/api/authentication.service';
 
 @Component({
   selector: 'app-admin-menu',

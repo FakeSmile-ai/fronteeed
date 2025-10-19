@@ -1,7 +1,7 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 
 import { TournamentSummary, TournamentTeamDetail, TournamentViewModel, UpdateMatchRequest } from './tournaments.models';
-import { TournamentsApiService } from '../../core/services/tournaments.service';
+import { TournamentsApiService } from '../../shared/services/api/tournaments.service';
 
 
 function ensureTeamIndex(tournament: TournamentViewModel): Record<string, TournamentTeamDetail> {
